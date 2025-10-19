@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Filter\Presenter;
+namespace Casbin\Admin\Grid\Filter\Presenter;
 
-use Encore\Admin\Admin;
+use Casbin\Admin\Admin;
 
 class Text extends Presenter
 {

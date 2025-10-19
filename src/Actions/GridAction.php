@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Actions;
+namespace Casbin\Admin\Actions;
 
-use Encore\Admin\Grid;
+use Casbin\Admin\Grid;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Http\Request;
 

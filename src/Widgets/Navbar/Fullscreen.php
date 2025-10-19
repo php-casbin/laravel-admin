@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Widgets\Navbar;
+namespace Casbin\Admin\Widgets\Navbar;
 
-use Encore\Admin\Admin;
+use Casbin\Admin\Admin;
 use Illuminate\Contracts\Support\Renderable;
 
 /**

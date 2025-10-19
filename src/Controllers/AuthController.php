@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace Casbin\Admin\Controllers;
 
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Form;
-use Encore\Admin\Layout\Content;
+use Casbin\Admin\Facades\Admin;
+use Casbin\Admin\Form;
+use Casbin\Admin\Layout\Content;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Hash;

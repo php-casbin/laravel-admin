@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Actions;
+namespace Casbin\Admin\Actions;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Form\Field;
+use Casbin\Admin\Admin;
+use Casbin\Admin\Form\Field;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 

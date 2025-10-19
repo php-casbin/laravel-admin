@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace Casbin\Admin\Controllers;
 
-use Encore\Admin\Actions\Action;
-use Encore\Admin\Actions\GridAction;
-use Encore\Admin\Actions\Response;
-use Encore\Admin\Actions\RowAction;
-use Encore\Admin\Widgets\Form;
+use Casbin\Admin\Actions\Action;
+use Casbin\Admin\Actions\GridAction;
+use Casbin\Admin\Actions\Response;
+use Casbin\Admin\Actions\RowAction;
+use Casbin\Admin\Widgets\Form;
 use Exception;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Database\Eloquent\Model;
@@ -158,7 +158,7 @@ class HandleController extends Controller
         $class = str_replace('_', '\\', $class);
 
         if (class_exists($class)) {
-            /** @var \Encore\Admin\Grid\Selectable $selectable */
+            /** @var \Casbin\Admin\Grid\Selectable $selectable */
             $selectable = new $class(...array_values($args));
 
             return $selectable->render();

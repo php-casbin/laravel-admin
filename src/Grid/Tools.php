@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\Admin\Grid;
+namespace Casbin\Admin\Grid;
 
-use Encore\Admin\Actions\GridAction;
-use Encore\Admin\Grid;
-use Encore\Admin\Grid\Tools\AbstractTool;
-use Encore\Admin\Grid\Tools\BatchActions;
-use Encore\Admin\Grid\Tools\FilterButton;
+use Casbin\Admin\Actions\GridAction;
+use Casbin\Admin\Grid;
+use Casbin\Admin\Grid\Tools\AbstractTool;
+use Casbin\Admin\Grid\Tools\BatchActions;
+use Casbin\Admin\Grid\Tools\FilterButton;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;

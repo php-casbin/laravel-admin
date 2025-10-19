@@ -1,6 +1,6 @@
 # Model-grid
 
-Class `Encore\Admin\Grid` is used to generate tables based on the data model,for example,we have a table `movies` in database:
+Class `Casbin\Admin\Grid` is used to generate tables based on the data model,for example,we have a table `movies` in database:
 
 ```sql
 CREATE TABLE `movies` (
@@ -23,8 +23,8 @@ And the model of this table is `App\Models\Movie`,The following code can generat
 ```php
 
 use App\Models\Movie;
-use Encore\Admin\Grid;
-use Encore\Admin\Facades\Admin;
+use Casbin\Admin\Grid;
+use Casbin\Admin\Facades\Admin;
 
 $grid = Admin::grid(Movie::class, function(Grid $grid){
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Displayers;
+namespace Casbin\Admin\Grid\Displayers;
 
-use Encore\Admin\Admin;
+use Casbin\Admin\Admin;
 use Illuminate\Support\Arr;
 
 class Select extends AbstractDisplayer

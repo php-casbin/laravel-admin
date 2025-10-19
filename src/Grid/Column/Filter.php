@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Grid\Column;
+namespace Casbin\Admin\Grid\Column;
 
-use Encore\Admin\Grid\Column;
-use Encore\Admin\Grid\Model;
+use Casbin\Admin\Grid\Column;
+use Casbin\Admin\Grid\Model;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Arr;
 

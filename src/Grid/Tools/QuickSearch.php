@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Tools;
+namespace Casbin\Admin\Grid\Tools;
 
-use Encore\Admin\Grid\Concerns\HasQuickSearch;
+use Casbin\Admin\Grid\Concerns\HasQuickSearch;
 use Illuminate\Support\Arr;
 
 class QuickSearch extends AbstractTool

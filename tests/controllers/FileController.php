@@ -2,9 +2,9 @@
 
 namespace Tests\Controllers;
 
-use Encore\Admin\Controllers\AdminController;
-use Encore\Admin\Form;
-use Encore\Admin\Grid;
+use Casbin\Admin\Controllers\AdminController;
+use Casbin\Admin\Form;
+use Casbin\Admin\Grid;
 use Tests\Models\File;
 
 class FileController extends AdminController

@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Show;
+namespace Casbin\Admin\Show;
 
-use Encore\Admin\Show;
+use Casbin\Admin\Show;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
 

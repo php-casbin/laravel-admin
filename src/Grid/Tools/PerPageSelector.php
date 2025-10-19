@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Grid\Tools;
+namespace Casbin\Admin\Grid\Tools;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Grid;
+use Casbin\Admin\Admin;
+use Casbin\Admin\Grid;
 
 class PerPageSelector extends AbstractTool
 {

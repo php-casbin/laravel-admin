@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Form;
+namespace Casbin\Admin\Form;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Form;
-use Encore\Admin\Widgets\Form as WidgetForm;
+use Casbin\Admin\Admin;
+use Casbin\Admin\Form;
+use Casbin\Admin\Widgets\Form as WidgetForm;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
@@ -92,7 +92,7 @@ class NestedForm
     protected $original = [];
 
     /**
-     * @var \Encore\Admin\Form|\Encore\Admin\Widgets\Form
+     * @var \Casbin\Admin\Form|\Casbin\Admin\Widgets\Form
      */
     protected $form;
 
@@ -290,7 +290,7 @@ class NestedForm
                 $value = $field->prepare($value);
             }
 
-            if (($field instanceof \Encore\Admin\Form\Field\Hidden) || $value != $field->original()) {
+            if (($field instanceof \Casbin\Admin\Form\Field\Hidden) || $value != $field->original()) {
                 if (is_array($columns)) {
                     foreach ($columns as $name => $column) {
                         Arr::set($prepared, $column, $value[$name]);

@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use Encore\Admin\Actions\BatchAction;
+use Casbin\Admin\Actions\BatchAction;
 use Illuminate\Database\Eloquent\Collection;
 
 class DummyClass extends BatchAction

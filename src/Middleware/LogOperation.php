@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Middleware;
+namespace Casbin\Admin\Middleware;
 
-use Encore\Admin\Auth\Database\OperationLog as OperationLogModel;
-use Encore\Admin\Facades\Admin;
+use Casbin\Admin\Auth\Database\OperationLog as OperationLogModel;
+use Casbin\Admin\Facades\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 

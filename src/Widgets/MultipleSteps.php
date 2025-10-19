@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Widgets;
+namespace Casbin\Admin\Widgets;
 
 use Illuminate\Contracts\Support\Renderable;
 
@@ -70,7 +70,7 @@ class MultipleSteps implements Renderable
         $class = $this->steps[$this->current];
 
         if (!is_subclass_of($class, StepForm::class)) {
-            admin_error("Class [{$class}] must be a sub-class of [Encore\Admin\Widgets\StepForm].");
+            admin_error("Class [{$class}] must be a sub-class of [Casbin\Admin\Widgets\StepForm].");
 
             return;
         }

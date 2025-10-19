@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Widgets;
+namespace Casbin\Admin\Widgets;
 
 class StepForm extends Form
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Displayers;
+namespace Casbin\Admin\Grid\Displayers;
 
-use Encore\Admin\Widgets\Carousel as CarouselWidget;
+use Casbin\Admin\Widgets\Carousel as CarouselWidget;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Facades\Storage;
 

@@ -9,7 +9,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;
 
         @if(config('admin.show_version'))
-        <strong>Version</strong>&nbsp;&nbsp; {!! \Encore\Admin\Admin::VERSION !!}
+        <strong>Version</strong>&nbsp;&nbsp; {!! \Casbin\Admin\Admin::VERSION !!}
         @endif
 
     </div>

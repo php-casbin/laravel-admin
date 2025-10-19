@@ -2,7 +2,7 @@
 
 namespace :namespace;
 
-use Encore\Admin\Extension;
+use Casbin\Admin\Extension;
 
 class :class_name extends Extension
 {

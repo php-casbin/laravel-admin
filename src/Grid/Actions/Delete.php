@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Grid\Actions;
+namespace Casbin\Admin\Grid\Actions;
 
-use Encore\Admin\Actions\Response;
-use Encore\Admin\Actions\RowAction;
+use Casbin\Admin\Actions\Response;
+use Casbin\Admin\Actions\RowAction;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 

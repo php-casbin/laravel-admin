@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Actions;
+namespace Casbin\Admin\Grid\Actions;
 
-use Encore\Admin\Actions\RowAction;
+use Casbin\Admin\Actions\RowAction;
 
 class Show extends RowAction
 {

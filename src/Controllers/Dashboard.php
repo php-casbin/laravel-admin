@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace Casbin\Admin\Controllers;
 
-use Encore\Admin\Admin;
+use Casbin\Admin\Admin;
 use Illuminate\Support\Arr;
 
 class Dashboard

@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Traits;
+namespace Casbin\Admin\Traits;
 
-use Encore\Admin\Form;
-use Encore\Admin\Grid;
-use Encore\Admin\Tree;
+use Casbin\Admin\Form;
+use Casbin\Admin\Grid;
+use Casbin\Admin\Tree;
 
 /**
  * @deprecated

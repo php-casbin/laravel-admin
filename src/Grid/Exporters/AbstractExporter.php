@@ -1,13 +1,13 @@
 <?php
 
-namespace Encore\Admin\Grid\Exporters;
+namespace Casbin\Admin\Grid\Exporters;
 
-use Encore\Admin\Grid;
+use Casbin\Admin\Grid;
 
 abstract class AbstractExporter implements ExporterInterface
 {
     /**
-     * @var \Encore\Admin\Grid
+     * @var \Casbin\Admin\Grid
      */
     protected $grid;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\Admin\Grid\Displayers;
+namespace Casbin\Admin\Grid\Displayers;
 
-use Encore\Admin\Actions\RowAction;
-use Encore\Admin\Admin;
-use Encore\Admin\Grid\Actions\Delete;
-use Encore\Admin\Grid\Actions\Edit;
-use Encore\Admin\Grid\Actions\Show;
+use Casbin\Admin\Actions\RowAction;
+use Casbin\Admin\Admin;
+use Casbin\Admin\Grid\Actions\Delete;
+use Casbin\Admin\Grid\Actions\Edit;
+use Casbin\Admin\Grid\Actions\Show;
 
 class DropdownActions extends Actions
 {

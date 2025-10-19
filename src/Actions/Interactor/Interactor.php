@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Actions\Interactor;
+namespace Casbin\Admin\Actions\Interactor;
 
-use Encore\Admin\Actions\Action;
+use Casbin\Admin\Actions\Action;
 
 abstract class Interactor
 {

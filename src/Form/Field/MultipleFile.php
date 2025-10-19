@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace Casbin\Admin\Form\Field;
 
-use Encore\Admin\Form;
-use Encore\Admin\Form\Field;
+use Casbin\Admin\Form;
+use Casbin\Admin\Form\Field;
 use Illuminate\Support\Arr;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 

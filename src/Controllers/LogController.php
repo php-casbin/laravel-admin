@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace Casbin\Admin\Controllers;
 
-use Encore\Admin\Auth\Database\OperationLog;
-use Encore\Admin\Grid;
+use Casbin\Admin\Auth\Database\OperationLog;
+use Casbin\Admin\Grid;
 use Illuminate\Support\Arr;
 
 class LogController extends AdminController

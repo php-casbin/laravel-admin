@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Form;
+namespace Casbin\Admin\Form;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Form;
-use Encore\Admin\Form\Field\Hidden;
+use Casbin\Admin\Admin;
+use Casbin\Admin\Form;
+use Casbin\Admin\Form\Field\Hidden;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\URL;

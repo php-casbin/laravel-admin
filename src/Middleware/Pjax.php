@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Middleware;
+namespace Casbin\Admin\Middleware;
 
 use Closure;
-use Encore\Admin\Facades\Admin;
+use Casbin\Admin\Facades\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\MessageBag;
 use Symfony\Component\DomCrawler\Crawler;

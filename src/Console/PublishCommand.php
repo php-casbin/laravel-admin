@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Console;
+namespace Casbin\Admin\Console;
 
 use Illuminate\Console\Command;
 
@@ -28,7 +28,7 @@ class PublishCommand extends Command
     public function handle()
     {
         $force = $this->option('force');
-        $options = ['--provider' => 'Encore\Admin\AdminServiceProvider'];
+        $options = ['--provider' => 'Casbin\Admin\AdminServiceProvider'];
         if ($force == true) {
             $options['--force'] = true;
         }

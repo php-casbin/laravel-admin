@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Displayers;
+namespace Casbin\Admin\Grid\Displayers;
 
-use Encore\Admin\Facades\Admin;
+use Casbin\Admin\Facades\Admin;
 use Illuminate\Support\Str;
 
 class Limit extends AbstractDisplayer

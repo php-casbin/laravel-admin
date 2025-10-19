@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\Admin\Widgets;
+namespace Casbin\Admin\Widgets;
 
 use Closure;
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Form as BaseForm;
-use Encore\Admin\Form\Field;
-use Encore\Admin\Layout\Content;
+use Casbin\Admin\Facades\Admin;
+use Casbin\Admin\Form as BaseForm;
+use Casbin\Admin\Form\Field;
+use Casbin\Admin\Layout\Content;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;

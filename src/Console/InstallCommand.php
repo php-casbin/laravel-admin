@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Console;
+namespace Casbin\Admin\Console;
 
 use Illuminate\Console\Command;
 
@@ -51,7 +51,7 @@ class InstallCommand extends Command
         $userModel = config('admin.database.users_model');
 
         if ($userModel::count() == 0) {
-            $this->call('db:seed', ['--class' => \Encore\Admin\Auth\Database\AdminTablesSeeder::class]);
+            $this->call('db:seed', ['--class' => \Casbin\Admin\Auth\Database\AdminTablesSeeder::class]);
         }
     }
 

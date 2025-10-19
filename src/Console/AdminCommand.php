@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Console;
+namespace Casbin\Admin\Console;
 
-use Encore\Admin\Admin;
+use Casbin\Admin\Admin;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Str;

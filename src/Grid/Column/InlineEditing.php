@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Column;
+namespace Casbin\Admin\Grid\Column;
 
-use Encore\Admin\Grid\Displayers;
+use Casbin\Admin\Grid\Displayers;
 
 trait InlineEditing
 {

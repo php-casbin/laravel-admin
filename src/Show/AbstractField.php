@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Show;
+namespace Casbin\Admin\Show;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Database\Eloquent\Model;

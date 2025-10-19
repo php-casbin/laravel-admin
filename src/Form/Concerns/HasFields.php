@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Form\Concerns;
+namespace Casbin\Admin\Form\Concerns;
 
-use Encore\Admin\Form\Field;
+use Casbin\Admin\Form\Field;
 use Illuminate\Support\Arr;
 
 /**

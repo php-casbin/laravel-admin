@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace Casbin\Admin\Controllers;
 
 /**
  * Trait ModelForm.

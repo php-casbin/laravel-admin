@@ -1,13 +1,13 @@
 <?php
 
-namespace Encore\Admin\Grid\Tools;
+namespace Casbin\Admin\Grid\Tools;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Form\Field;
-use Encore\Admin\Form\Field\MultipleSelect;
-use Encore\Admin\Form\Field\Select;
-use Encore\Admin\Form\Field\Text;
-use Encore\Admin\Grid;
+use Casbin\Admin\Admin;
+use Casbin\Admin\Form\Field;
+use Casbin\Admin\Form\Field\MultipleSelect;
+use Casbin\Admin\Form\Field\Select;
+use Casbin\Admin\Form\Field\Text;
+use Casbin\Admin\Grid;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
 

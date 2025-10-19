@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Console;
+namespace Casbin\Admin\Console;
 
 use Illuminate\Database\Eloquent\Model;
 

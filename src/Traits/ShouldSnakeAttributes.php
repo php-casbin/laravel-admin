@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Traits;
+namespace Casbin\Admin\Traits;
 
-use Encore\Admin\Grid\Model as GridModel;
+use Casbin\Admin\Grid\Model as GridModel;
 
 trait ShouldSnakeAttributes
 {

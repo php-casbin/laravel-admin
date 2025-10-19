@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace Casbin\Admin\Form\Field;
 
-use Encore\Admin\Admin;
+use Casbin\Admin\Admin;
 
 class CheckboxCard extends CheckboxButton
 {

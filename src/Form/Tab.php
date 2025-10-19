@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Form;
+namespace Casbin\Admin\Form;
 
-use Encore\Admin\Form;
+use Casbin\Admin\Form;
 use Illuminate\Support\Collection;
 
 class Tab

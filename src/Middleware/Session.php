@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Middleware;
+namespace Casbin\Admin\Middleware;
 
 use Illuminate\Http\Request;
 

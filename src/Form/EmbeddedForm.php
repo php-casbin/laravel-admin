@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Form;
+namespace Casbin\Admin\Form;
 
-use Encore\Admin\Form;
-use Encore\Admin\Widgets\Form as WidgetForm;
+use Casbin\Admin\Form;
+use Casbin\Admin\Widgets\Form as WidgetForm;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 

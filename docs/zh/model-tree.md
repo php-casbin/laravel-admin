@@ -23,7 +23,7 @@ CREATE TABLE `demo_categories` (
 
 namespace App\Models\Demo;
 
-use Encore\Admin\Traits\ModelTree;
+use Casbin\Admin\Traits\ModelTree;
 use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
@@ -39,7 +39,7 @@ class Category extends Model
 
 namespace App\Models\Demo;
 
-use Encore\Admin\Traits\ModelTree;
+use Casbin\Admin\Traits\ModelTree;
 use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
@@ -67,11 +67,11 @@ namespace App\Admin\Controllers\Demo;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
-use Encore\Admin\Form;
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Layout\Content;
-use Encore\Admin\Controllers\ModelForm;
-use Encore\Admin\Tree;
+use Casbin\Admin\Form;
+use Casbin\Admin\Facades\Admin;
+use Casbin\Admin\Layout\Content;
+use Casbin\Admin\Controllers\ModelForm;
+use Casbin\Admin\Tree;
 
 class CategoryController extends Controller
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace Encore\Admin;
+namespace Casbin\Admin;
 
 use Closure;
-use Encore\Admin\Exception\Handler;
-use Encore\Admin\Grid\Column;
-use Encore\Admin\Grid\Concerns;
-use Encore\Admin\Grid\Displayers;
-use Encore\Admin\Grid\Model;
-use Encore\Admin\Grid\Row;
-use Encore\Admin\Grid\Tools;
-use Encore\Admin\Traits\ShouldSnakeAttributes;
+use Casbin\Admin\Exception\Handler;
+use Casbin\Admin\Grid\Column;
+use Casbin\Admin\Grid\Concerns;
+use Casbin\Admin\Grid\Displayers;
+use Casbin\Admin\Grid\Model;
+use Casbin\Admin\Grid\Row;
+use Casbin\Admin\Grid\Tools;
+use Casbin\Admin\Traits\ShouldSnakeAttributes;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 use Illuminate\Database\Eloquent\Relations;
 use Illuminate\Support\Collection;
@@ -43,7 +43,7 @@ class Grid
     /**
      * The grid data model instance.
      *
-     * @var \Encore\Admin\Grid\Model|\Illuminate\Database\Eloquent\Builder
+     * @var \Casbin\Admin\Grid\Model|\Illuminate\Database\Eloquent\Builder
      */
     protected $model;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Auth;
+namespace Casbin\Admin\Auth;
 
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Middleware\Pjax;
+use Casbin\Admin\Facades\Admin;
+use Casbin\Admin\Middleware\Pjax;
 
 class Permission
 {

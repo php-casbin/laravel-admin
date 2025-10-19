@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace Casbin\Admin\Form\Field;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Form;
-use Encore\Admin\Form\Field;
-use Encore\Admin\Form\NestedForm;
-use Encore\Admin\Widgets\Form as WidgetForm;
+use Casbin\Admin\Admin;
+use Casbin\Admin\Form;
+use Casbin\Admin\Form\Field;
+use Casbin\Admin\Form\NestedForm;
+use Casbin\Admin\Widgets\Form as WidgetForm;
 use Illuminate\Database\Eloquent\Relations\HasMany as Relation;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Support\Arr;

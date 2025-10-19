@@ -124,7 +124,7 @@ return [
         'providers' => [
             'admin' => [
                 'driver' => 'eloquent',
-                'model'  => Encore\Admin\Auth\Database\Administrator::class,
+                'model'  => Casbin\Admin\Auth\Database\Administrator::class,
             ],
         ],
 
@@ -177,19 +177,19 @@ return [
 
         // User tables and model.
         'users_table' => 'admin_users',
-        'users_model' => Encore\Admin\Auth\Database\Administrator::class,
+        'users_model' => Casbin\Admin\Auth\Database\Administrator::class,
 
         // Role table and model.
         'roles_table' => 'admin_roles',
-        'roles_model' => Encore\Admin\Auth\Database\Role::class,
+        'roles_model' => Casbin\Admin\Auth\Database\Role::class,
 
         // Permission table and model.
         'permissions_table' => 'admin_permissions',
-        'permissions_model' => Encore\Admin\Auth\Database\Permission::class,
+        'permissions_model' => Casbin\Admin\Auth\Database\Permission::class,
 
         // Menu table and model.
         'menu_table' => 'admin_menu',
-        'menu_model' => Encore\Admin\Auth\Database\Menu::class,
+        'menu_model' => Casbin\Admin\Auth\Database\Menu::class,
 
         // Pivot table for table above.
         'operation_log_table'    => 'admin_operation_log',
@@ -383,7 +383,7 @@ return [
     | The global Grid action display class.
     |--------------------------------------------------------------------------
     */
-    'grid_action_class' => \Encore\Admin\Grid\Displayers\DropdownActions::class,
+    'grid_action_class' => \Casbin\Admin\Grid\Displayers\DropdownActions::class,
 
     /*
     |--------------------------------------------------------------------------

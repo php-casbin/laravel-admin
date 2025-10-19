@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace Casbin\Admin\Form\Field;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Form\Field;
+use Casbin\Admin\Admin;
+use Casbin\Admin\Form\Field;
 use Illuminate\Support\Arr;
 
 class ListField extends Field

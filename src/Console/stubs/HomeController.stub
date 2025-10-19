@@ -3,10 +3,10 @@
 namespace DummyNamespace;
 
 use App\Http\Controllers\Controller;
-use Encore\Admin\Controllers\Dashboard;
-use Encore\Admin\Layout\Column;
-use Encore\Admin\Layout\Content;
-use Encore\Admin\Layout\Row;
+use Casbin\Admin\Controllers\Dashboard;
+use Casbin\Admin\Layout\Column;
+use Casbin\Admin\Layout\Content;
+use Casbin\Admin\Layout\Row;
 
 class HomeController extends Controller
 {

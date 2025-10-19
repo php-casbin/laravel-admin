@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Filter\Layout;
+namespace Casbin\Admin\Grid\Filter\Layout;
 
-use Encore\Admin\Grid\Filter;
+use Casbin\Admin\Grid\Filter;
 use Illuminate\Support\Collection;
 
 class Layout

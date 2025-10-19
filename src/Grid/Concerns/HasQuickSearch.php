@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Grid\Concerns;
+namespace Casbin\Admin\Grid\Concerns;
 
-use Encore\Admin\Grid\Column;
-use Encore\Admin\Grid\Model;
-use Encore\Admin\Grid\Tools;
+use Casbin\Admin\Grid\Column;
+use Casbin\Admin\Grid\Model;
+use Casbin\Admin\Grid\Tools;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;

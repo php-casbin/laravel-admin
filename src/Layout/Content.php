@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Layout;
+namespace Casbin\Admin\Layout;
 
 use Closure;
-use Encore\Admin\Facades\Admin;
+use Casbin\Admin\Facades\Admin;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Arr;
 

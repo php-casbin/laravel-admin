@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Traits;
+namespace Casbin\Admin\Traits;
 
 use Illuminate\Support\Str;
 

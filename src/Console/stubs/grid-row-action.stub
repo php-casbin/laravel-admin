@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use Encore\Admin\Actions\RowAction;
+use Casbin\Admin\Actions\RowAction;
 use Illuminate\Database\Eloquent\Model;
 
 class DummyClass extends RowAction

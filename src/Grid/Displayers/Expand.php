@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Grid\Displayers;
+namespace Casbin\Admin\Grid\Displayers;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Grid\Simple;
+use Casbin\Admin\Admin;
+use Casbin\Admin\Grid\Simple;
 use Illuminate\Contracts\Support\Renderable;
 
 class Expand extends AbstractDisplayer

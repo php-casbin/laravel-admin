@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace Casbin\Admin\Form\Field;
 
-use Encore\Admin\Form\Field;
+use Casbin\Admin\Form\Field;
 
 class Text extends Field
 {

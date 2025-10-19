@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\Admin;
+namespace Casbin\Admin;
 
-use Encore\Admin\Show\Divider;
-use Encore\Admin\Show\Field;
-use Encore\Admin\Show\Panel;
-use Encore\Admin\Show\Relation;
-use Encore\Admin\Traits\ShouldSnakeAttributes;
+use Casbin\Admin\Show\Divider;
+use Casbin\Admin\Show\Field;
+use Casbin\Admin\Show\Panel;
+use Casbin\Admin\Show\Relation;
+use Casbin\Admin\Traits\ShouldSnakeAttributes;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

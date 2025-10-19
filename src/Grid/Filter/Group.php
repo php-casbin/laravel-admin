@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Filter;
+namespace Casbin\Admin\Grid\Filter;
 
-use Encore\Admin\Admin;
+use Casbin\Admin\Admin;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 

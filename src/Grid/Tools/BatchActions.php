@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Tools;
+namespace Casbin\Admin\Grid\Tools;
 
-use Encore\Admin\Admin;
+use Casbin\Admin\Admin;
 use Illuminate\Support\Collection;
 
 class BatchActions extends AbstractTool

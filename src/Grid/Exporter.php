@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Grid;
+namespace Casbin\Admin\Grid;
 
-use Encore\Admin\Grid;
-use Encore\Admin\Grid\Exporters\CsvExporter;
+use Casbin\Admin\Grid;
+use Casbin\Admin\Grid\Exporters\CsvExporter;
 
 class Exporter
 {

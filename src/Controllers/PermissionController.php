@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace Casbin\Admin\Controllers;
 
-use Encore\Admin\Form;
-use Encore\Admin\Grid;
-use Encore\Admin\Show;
+use Casbin\Admin\Form;
+use Casbin\Admin\Grid;
+use Casbin\Admin\Show;
 use Illuminate\Support\Str;
 
 class PermissionController extends AdminController

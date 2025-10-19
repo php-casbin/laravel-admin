@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Actions\Interactor;
+namespace Casbin\Admin\Actions\Interactor;
 
-use Encore\Admin\Actions\RowAction;
-use Encore\Admin\Admin;
-use Encore\Admin\Form\Field;
+use Casbin\Admin\Actions\RowAction;
+use Casbin\Admin\Admin;
+use Casbin\Admin\Form\Field;
 use Illuminate\Http\Request;
 use Illuminate\Support\MessageBag;
 use Illuminate\Validation\ValidationException;

@@ -3,10 +3,10 @@
 namespace DummyNamespace;
 
 use DummyModelNamespace;
-use Encore\Admin\Controllers\AdminController;
-use Encore\Admin\Form;
-use Encore\Admin\Grid;
-use Encore\Admin\Show;
+use Casbin\Admin\Controllers\AdminController;
+use Casbin\Admin\Form;
+use Casbin\Admin\Grid;
+use Casbin\Admin\Show;
 
 class DummyClass extends AdminController
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Encore\Admin\Grid\Column;
+namespace Casbin\Admin\Grid\Column;
 
 use Carbon\Carbon;
-use Encore\Admin\Grid\Column;
-use Encore\Admin\Grid\Displayers;
-use Encore\Admin\Grid\Model;
+use Casbin\Admin\Grid\Column;
+use Casbin\Admin\Grid\Displayers;
+use Casbin\Admin\Grid\Model;
 use Illuminate\Support\Arr;
 
 /**

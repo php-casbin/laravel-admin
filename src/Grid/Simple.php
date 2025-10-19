@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid;
+namespace Casbin\Admin\Grid;
 
-use Encore\Admin\Grid;
+use Casbin\Admin\Grid;
 use Illuminate\Contracts\Support\Renderable;
 
 /**
