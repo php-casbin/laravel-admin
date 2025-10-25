@@ -61,6 +61,15 @@ return [
                 'model'  => Casbin\Admin\Auth\Database\Administrator::class,
             ],
         ],
+
+        'remember' => true,
+
+        'redirect_to' => 'auth/login',
+
+        'excepts' => [
+            'auth/login',
+            'auth/logout',
+        ],
     ],
 
     /*

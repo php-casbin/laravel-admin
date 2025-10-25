@@ -11,6 +11,11 @@ class TestCase extends BaseTestCase
     protected $baseUrl = 'http://localhost:8000';
 
     /**
+     * Cache heavy one-time bootstrapping across tests.
+     */
+    protected static bool $publishedAssets = false;
+
+    /**
      * Boots the application.
      *
      * @return \Illuminate\Foundation\Application
@@ -37,11 +42,14 @@ class TestCase extends BaseTestCase
 
         $adminConfig = require __DIR__.'/config/admin.php';
 
-        $this->app['config']->set('database.default', env('DB_CONNECTION', 'mysql'));
-        $this->app['config']->set('database.connections.mysql.host', env('MYSQL_HOST', 'localhost'));
-        $this->app['config']->set('database.connections.mysql.database', env('MYSQL_DATABASE', 'laravel_admin_test'));
-        $this->app['config']->set('database.connections.mysql.username', env('MYSQL_USER', 'root'));
-        $this->app['config']->set('database.connections.mysql.password', env('MYSQL_PASSWORD', ''));
+        // Use sqlite in-memory for tests to avoid external MySQL dependency
+        $this->app['config']->set('database.default', 'sqlite');
+        $this->app['config']->set('database.connections.sqlite', [
+            'driver' => 'sqlite',
+            'database' => ':memory:',
+            'prefix' => '',
+        ]);
+
         $this->app['config']->set('app.key', 'AckfSECXIvnK5r28GVIWUAxmbBSjTsmF');
         $this->app['config']->set('filesystems', require __DIR__.'/config/filesystems.php');
         $this->app['config']->set('admin', $adminConfig);
@@ -50,7 +58,11 @@ class TestCase extends BaseTestCase
             $this->app['config']->set($key, $value);
         }
 
-        $this->artisan('vendor:publish', ['--provider' => 'Casbin\Admin\AdminServiceProvider']);
+        // Publish assets only once across the entire test run to avoid repeated heavy I/O
+        if (!self::$publishedAssets) {
+            $this->artisan('vendor:publish', ['--provider' => 'Casbin\Admin\AdminServiceProvider']);
+            self::$publishedAssets = true;
+        }
 
         Schema::defaultStringLength(191);
 

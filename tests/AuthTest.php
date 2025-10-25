@@ -5,7 +5,7 @@ class AuthTest extends TestCase
     public function testLoginPage()
     {
         $this->visit('admin/auth/login')
-            ->see('login');
+            ->see('Login');
     }
 
     public function testVisitWithoutLogin()
@@ -20,9 +20,9 @@ class AuthTest extends TestCase
         $credentials = ['username' => 'admin', 'password' => 'admin'];
 
         $this->visit('admin/auth/login')
-            ->see('login')
+            ->see('Login')
             ->submitForm('Login', $credentials)
-            ->see('dashboard')
+            ->see('Dashboard')
             ->seeCredentials($credentials, 'admin')
             ->seeIsAuthenticated('admin')
             ->seePageIs('admin')

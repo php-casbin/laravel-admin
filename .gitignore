@@ -1,4 +1,5 @@
 .DS_Store
+.build
 phpunit.phar
 /vendor
 composer.phar
@@ -7,3 +8,7 @@ composer.lock
 .idea/
 .php_cs.cache
 .vscode/
+package.xml
+.phpunit.result.cache
+tmp_phpunit_output.txt
+phpunit.xml

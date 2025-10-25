@@ -48,7 +48,7 @@ class UsersTest extends TestCase
             ->dontSeeIsAuthenticated('admin')
             ->seePageIs('admin/auth/login')
             ->submitForm('Login', ['username' => $user['username'], 'password' => $user['password']])
-            ->see('dashboard')
+            ->see('Dashboard')
             ->seeIsAuthenticated('admin')
             ->seePageIs('admin');
 
@@ -88,7 +88,7 @@ class UsersTest extends TestCase
             ->dontSeeIsAuthenticated('admin')
             ->seePageIs('admin/auth/login')
             ->submitForm('Login', ['username' => $this->user->username, 'password' => $password])
-            ->see('dashboard')
+            ->see('Dashboard')
             ->seeIsAuthenticated('admin')
             ->seePageIs('admin');
     }

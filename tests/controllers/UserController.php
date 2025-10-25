@@ -88,11 +88,15 @@ class UserController extends AdminController
 
         $form->display('id', 'ID');
         $form->text('username');
-        $form->email('email')->rules('required');
+        $form->email('email')->rules('required|email', [
+            'email.email' => 'The email must be a valid email address.',
+        ]);
         $form->mobile('mobile');
         $form->image('avatar')->help('上传头像', 'fa-image');
         $form->ignore(['password_confirmation']);
-        $form->password('password')->rules('confirmed');
+        $form->password('password')->rules('confirmed', [
+            'password.confirmed' => 'The Password confirmation does not match.',
+        ]);
         $form->password('password_confirmation');
 
         $form->divider();

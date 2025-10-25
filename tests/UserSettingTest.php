@@ -44,7 +44,7 @@ class UserSettingTest extends TestCase
         File::cleanDirectory(public_path('uploads/images'));
 
         $this->visit('admin/auth/setting')
-            ->attach(__DIR__.'/assets/test.jpg', 'avatar')
+            ->attach(__DIR__ . '/assets/test.jpg', 'avatar')
             ->press('Submit')
             ->seePageIs('admin/auth/setting');
 
@@ -63,7 +63,7 @@ class UserSettingTest extends TestCase
         $this->visit('admin/auth/setting')
             ->submitForm('Submit', $data)
             ->seePageIs('admin/auth/setting')
-            ->see('The Password confirmation does not match.');
+            ->see('The Password field confirmation does not match.');
     }
 
     public function testUpdatePassword()
@@ -86,9 +86,9 @@ class UserSettingTest extends TestCase
         $credentials = ['username' => 'admin', 'password' => '123456'];
 
         $this->visit('admin/auth/login')
-            ->see('login')
+            ->see('Login')
             ->submitForm('Login', $credentials)
-            ->see('dashboard')
+            ->see('Dashboard')
             ->seeCredentials($credentials, 'admin')
             ->seeIsAuthenticated('admin')
             ->seePageIs('admin');

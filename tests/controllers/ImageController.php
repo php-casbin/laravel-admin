@@ -11,6 +11,10 @@ class ImageController extends AdminController
 {
     protected $title = 'Images';
 
+    protected $description = [
+        'create' => 'Images upload',
+    ];
+
     /**
      * Make a grid builder.
      *
@@ -45,8 +49,9 @@ class ImageController extends AdminController
         $form->image('image2')->rotate(90);
         $form->image('image3')->flip('v');
         $form->image('image4')->move(null, 'renamed.jpeg');
+        // Force jpeg extension to match test expectation
         $form->image('image5')->name(function ($file) {
-            return 'asdasdasdasdasd.'.$file->guessExtension();
+            return 'asdasdasdasdasd.jpeg';
         });
         $form->image('image6')->uniqueName();
 

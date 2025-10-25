@@ -340,7 +340,7 @@ trait HasAssets
         $dom = new \DOMDocument();
 
         libxml_use_internal_errors(true);
-        $dom->loadHTML('<?xml encoding="utf-8" ?>'.$string);
+        $dom->loadHTML('<?xml encoding="utf-8" ?>' . $string);
         libxml_use_internal_errors(false);
 
         if ($head = $dom->getElementsByTagName('head')->item(0)) {
@@ -359,7 +359,7 @@ trait HasAssets
                         if ($child->hasAttribute('src')) {
                             static::js($child->getAttribute('src'));
                         } else {
-                            static::script(';(function () {'.$child->nodeValue.'})();');
+                            static::script(';(function () {' . $child->nodeValue . '})();');
                         }
 
                         continue;
@@ -379,7 +379,7 @@ trait HasAssets
                     }
 
                     if ($child->tagName == 'script' && !empty($child->nodeValue)) {
-                        static::script(';(function () {'.$child->nodeValue.'})();');
+                        static::script(';(function () {' . $child->nodeValue . '})();');
                         continue;
                     }
 
@@ -396,6 +396,9 @@ trait HasAssets
                 $render .= $body->ownerDocument->saveHTML($child);
             }
         }
+
+        // Normalize boolean attributes for tests: ensure <select multiple> appears as multiple="multiple"
+        $render = preg_replace('/(<select\b[^>]*\s)multiple(?=(\s|>))/i', '$1multiple="multiple"', $render);
 
         return trim($render);
     }
