@@ -14,7 +14,6 @@
 </p>
 
 <div align="center">
-
     <a href="https://github.com/php-casbin/laravel-admin/actions">
         <img src="https://github.com/php-casbin/laravel-admin/actions/workflows/phpunit.yml/badge.svg" alt="PHPUnit Status">
     </a>
