@@ -27,6 +27,31 @@ class User extends Model
         return "{$this->profile->latitude} {$this->profile->longitude}";
     }
 
+    public function getStartAtAttribute()
+    {
+        return (string) ($this->profile->start_at ?? '');
+    }
+
+    public function getEndAtAttribute()
+    {
+        return (string) ($this->profile->end_at ?? '');
+    }
+
+    public function getPostcodeAttribute()
+    {
+        return (string) ($this->profile->postcode ?? '');
+    }
+
+    public function getAddressAttribute()
+    {
+        return (string) ($this->profile->address ?? '');
+    }
+
+    public function getColorAttribute()
+    {
+        return (string) ($this->profile->color ?? '');
+    }
+
     public function tags()
     {
         return $this->belongsToMany(Tag::class, 'test_user_tags', 'user_id', 'tag_id');

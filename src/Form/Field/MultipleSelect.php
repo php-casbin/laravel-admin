@@ -37,7 +37,7 @@ class MultipleSelect extends Select
                 $fullKey = $relation->getQualifiedRelatedPivotKeyName();
                 $fullKeyArray = explode('.', $fullKey);
 
-                return $this->otherKey = 'pivot.'.end($fullKeyArray);
+                return $this->otherKey = 'pivot.' . end($fullKeyArray);
             } elseif ($relation instanceof HasManyRelation) {
                 /* @var HasManyRelation $relation */
                 return $this->otherKey = $relation->getRelated()->getKeyName();
@@ -75,7 +75,7 @@ class MultipleSelect extends Select
         if (is_null($first)) {
             $this->value = null;
 
-        // MultipleSelect value store as an ont-to-many relationship.
+            // MultipleSelect value store as an ont-to-many relationship.
         } elseif (is_array($first)) {
             foreach ($relations as $relation) {
                 $this->value[] = Arr::get($relation, $this->getOtherKey());
@@ -109,7 +109,7 @@ class MultipleSelect extends Select
         if (is_null($first)) {
             $this->original = null;
 
-        // MultipleSelect value store as an ont-to-many relationship.
+            // MultipleSelect value store as an ont-to-many relationship.
         } elseif (is_array($first)) {
             foreach ($relations as $relation) {
                 $this->original[] = Arr::get($relation, $this->getOtherKey());

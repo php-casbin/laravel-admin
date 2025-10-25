@@ -16,7 +16,7 @@ class MenuTest extends TestCase
     {
         $this->visit('admin/auth/menu')
             ->see('Menu')
-            ->see('Index')
+            ->see('List')
             ->see('Auth')
             ->see('Users')
             ->see('Roles')
@@ -36,11 +36,11 @@ class MenuTest extends TestCase
             ->seeInDatabase(config('admin.database.menu_table'), $item)
             ->assertEquals(8, Menu::count());
 
-//        $this->expectException(\Laravel\BrowserKitTesting\HttpException::class);
-//
-//        $this->visit('admin')
-//            ->see('Test')
-//            ->click('Test');
+        //        $this->expectException(\Laravel\BrowserKitTesting\HttpException::class);
+        //
+        //        $this->visit('admin')
+        //            ->see('Test')
+        //            ->click('Test');
     }
 
     public function testDeleteMenu()

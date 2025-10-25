@@ -15,4 +15,20 @@
             <directory>tests/</directory>
         </testsuite>
     </testsuites>
+
+    <coverage includeUncoveredFiles="true"
+          pathCoverage="false"
+          ignoreDeprecatedCodeUnits="true"
+          disableCodeCoverageIgnore="true">
+        <report>
+            <clover outputFile=".build/logs/clover.xml"/>
+            <html outputDirectory=".build/html" lowUpperBound="50" highLowerBound="90"/>
+        </report>
+    </coverage>
+
+    <source>
+        <include>
+            <directory>./src</directory>
+        </include>
+    </source>
 </phpunit>

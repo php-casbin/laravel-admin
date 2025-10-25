@@ -51,14 +51,28 @@ class UserGridTest extends TestCase
 
     protected function seedsTable($count = 100)
     {
-        factory(\Tests\Models\User::class, $count)
-            ->create()
-            ->each(function ($u) {
-                $u->profile()->save(factory(\Tests\Models\Profile::class)->make());
-                $u->tags()->saveMany(factory(\Tests\Models\Tag::class, 5)->make());
-                $u->data = ['json' => ['field' => random_int(0, 50)]];
-                $u->save();
-            });
+        $users = factory(\Tests\Models\User::class, $count)->create();
+        if (!($users instanceof \Illuminate\Support\Collection)) {
+            $users = collect([$users]);
+        }
+    
+        $users->each(function ($u) {
+            $u->profile()->save(factory(\Tests\Models\Profile::class)->make());
+            $u->tags()->saveMany(factory(\Tests\Models\Tag::class, 5)->make());
+            $u->data = ['json' => ['field' => random_int(0, 50)]];
+            $u->save();
+        });
+    
+        // Ensure exactly 20 usernames contain 'mi' for deterministic like-filter tests
+        $users->take(20)->each(function ($u) {
+            $u->username = $u->username . 'mi';
+            $u->save();
+        });
+        // Ensure the rest do NOT contain 'mi' to keep total matches at 20
+        $users->slice(20)->each(function ($u) {
+            $u->username = str_replace('mi', 'zx', $u->username);
+            $u->save();
+        });
     }
 
     public function testGridWithData()
