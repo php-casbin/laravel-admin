@@ -14,14 +14,21 @@
 </p>
 
 <div align="center">
-    <a href="https://packagist.org/packages/casbin/laravel-admin">
-        <img src="https://img.shields.io/packagist/l/casbin/laravel-admin.svg?maxAge=2592000&&style=flat-square" alt="Packagist">
+
+    <a href="https://github.com/php-casbin/laravel-admin/actions">
+        <img src="https://github.com/php-casbin/laravel-admin/actions/workflows/phpunit.yml/badge.svg" alt="PHPUnit Status">
+    </a>
+    <a href="https://coveralls.io/github/php-casbin/laravel-admin">
+        <img src="https://coveralls.io/repos/github/php-casbin/laravel-admin/badge.svg" alt="Coverage Status">
     </a>
     <a href="https://packagist.org/packages/casbin/laravel-admin">
-        <img src="https://img.shields.io/packagist/dt/casbin/laravel-admin.svg?style=flat-square" alt="Total Downloads">
+        <img src="https://poser.pugx.org/casbin/laravel-admin/v/stable" alt="Latest Stable Version">
     </a>
-    <a href="https://github.com/php-casbin/laravel-admin">
-        <img src="https://img.shields.io/badge/Awesome-Laravel-brightgreen.svg?style=flat-square" alt="Awesome Laravel">
+     <a href="https://packagist.org/packages/casbin/laravel-admin">
+        <img src="https://poser.pugx.org/casbin/laravel-admin/downloads" alt="Total Downloads">
+    </a>
+    <a href="https://packagist.org/packages/casbin/laravel-admin">
+        <img src="https://poser.pugx.org/casbin/laravel-admin/license" alt="License">
     </a>
 </div>
 
