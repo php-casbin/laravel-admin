@@ -126,4 +126,4 @@ Other
 
 License
 ------------
-`laravel-admin` is licensed under [The Apacle 2.0 License (MIT)](LICENSE).
+`laravel-admin` is licensed under [The Apacle 2.0 License](LICENSE).
